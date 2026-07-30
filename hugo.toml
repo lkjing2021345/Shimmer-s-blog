@@ -1,12 +1,14 @@
 baseURL = 'https://lkjing2021345.github.io/'
 locale = 'en-us'
 title = 'Shimmer の blog'
+canonifyURLs = false
+relativeURLs = false
 #theme = "github.com/gohugo-ananke/ananke/v2"
 theme = "stack"
 [params]
   [params.sidebar]
     # 头像设置
-    avatar = "img/avatar.jpg"  # 把头像图片放在 static/img/ 目录下
+    avatar = "/img/avatar.jpg"  # 把头像图片放在 static/img/ 目录下
     # 副标题
     subtitle = "网络安全爱好者"
     # --- 2. 社交链接配置 (Stack 主题专用) ---
@@ -26,7 +28,7 @@ theme = "stack"
       weight = 1
   [[menu.main]]
       name = "文章"
-      url = "/posts/"
+      url = "/post/"
       weight = 2
   [[menu.main]]
       name = "关于"
