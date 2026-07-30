@@ -2,26 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:1313/Shimmer-s-blog/</loc>
     <lastmod>2026-07-30T14:32:38+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>http://localhost:1313/Shimmer-s-blog/about/</loc>
     <lastmod>2026-07-30T14:32:38+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/page/</loc>
+    <loc>http://localhost:1313/Shimmer-s-blog/page/</loc>
     <lastmod>2026-07-30T14:15:23+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/page/about/</loc>
+    <loc>http://localhost:1313/Shimmer-s-blog/page/about/</loc>
     <lastmod>2026-07-30T14:15:23+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/my-first-post/</loc>
+    <loc>http://localhost:1313/Shimmer-s-blog/post/my-first-post/</loc>
     <lastmod>2026-07-30T14:06:45+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/</loc>
+    <loc>http://localhost:1313/Shimmer-s-blog/post/</loc>
     <lastmod>2026-07-30T14:06:45+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>http://localhost:1313/Shimmer-s-blog/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>http://localhost:1313/Shimmer-s-blog/tags/</loc>
   </url>
 </urlset>
