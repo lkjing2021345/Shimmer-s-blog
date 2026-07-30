@@ -1,0 +1,32 @@
+﻿<style>
+    /*
+       调试模式：给侧边栏加个红框，看看选对了没
+       如果页面左侧出现了红框，说明选择器是对的，只是样式被覆盖了。
+       如果没红框，说明选择器还是错的。
+    */
+    body.home .sidebar,
+    body.list .sidebar {
+        border: 5px solid red !important; /* 调试用：红框 */
+        background-color: yellow !important; /* 调试用：黄底 */
+        /* 强制破坏原有布局 */
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        height: auto !important;
+        min-height: 0 !important;
+        width: 100% !important;
+        flex: none !important; /* 防止 flex 布局挤压 */
+        /* 尝试应用背景图 */
+        background-image: url('/luo.jpg') !important;
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+    }
+
+    /* 强制主容器变成上下排列 */
+    body.home .main-container,
+    body.list .main-container {
+        flex-direction: column !important;
+        display: flex !important; /* 确保它是 flex 容器 */
+    }
+</style>

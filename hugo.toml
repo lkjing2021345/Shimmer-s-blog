@@ -1,0 +1,34 @@
+baseURL = 'https://example.org/'
+locale = 'en-us'
+title = 'Shimmer の blog'
+#theme = "github.com/gohugo-ananke/ananke/v2"
+theme = "stack"
+[params]
+  [params.sidebar]
+    # 头像设置
+    avatar = "/img/avatar.jpg"  # 把头像图片放在 static/img/ 目录下
+    # 副标题
+    subtitle = "网络安全爱好者"
+    # --- 2. 社交链接配置 (Stack 主题专用) ---
+  [[params.sidebar.links]]
+    name = "GitHub"
+    url = "https://github.com/lkjing2021345"
+    icon = "github"
+
+  [[params.sidebar.links]]
+    name = "Bilibili"
+    url = "https://space.bilibili.com/565536792"
+    icon = "bilibili"
+    # 菜单导航
+  [[menu.main]]
+      name = "首页"
+      url = "/"
+      weight = 1
+  [[menu.main]]
+      name = "文章"
+      url = "/posts/"
+      weight = 2
+  [[menu.main]]
+      name = "关于"
+      url = "/about/"
+      weight = 3
