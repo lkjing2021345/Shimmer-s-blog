@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Pages on Shimmer の blog</title>
-        <link>http://localhost:1313/Shimmer-s-blog/page/</link>
+        <link>https://lkjing2021345.github.io/page/</link>
         <description>Recent content in Pages on Shimmer の blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Thu, 30 Jul 2026 14:15:23 +0800</lastBuildDate><atom:link href="http://localhost:1313/Shimmer-s-blog/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 30 Jul 2026 14:15:23 +0800</lastBuildDate><atom:link href="https://lkjing2021345.github.io/page/index.xml" rel="self" type="application/rss+xml" /><item>
             <title>关于我</title>
-            <link>http://localhost:1313/Shimmer-s-blog/page/about/</link>
+            <link>https://lkjing2021345.github.io/page/about/</link>
             <pubDate>Thu, 30 Jul 2026 14:15:23 +0800</pubDate>
-            <guid>http://localhost:1313/Shimmer-s-blog/page/about/</guid>
+            <guid>https://lkjing2021345.github.io/page/about/</guid>
             <description>&lt;p&gt;以下是我的社交账号，欢迎来找我玩：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;name: GitHub&#xA;icon: brand-github&#xA;url: &lt;a class=&#34;link&#34; href=&#34;https://github.com/lkjing2021345&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;&#xA;    &gt;https://github.com/lkjing2021345&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;name: Bilibili&#xA;icon: brand-bilibili&#xA;url: &lt;a class=&#34;link&#34; href=&#34;https://space.bilibili.com/565536792&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;&#xA;    &gt;https://space.bilibili.com/565536792&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;</description>
         </item></channel>
 </rss>
