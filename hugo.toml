@@ -1,4 +1,4 @@
-baseURL = 'https://lkjing2021345.github.io/Shimmer-s-blog/'
+baseURL = 'https://lkjing2021345.github.io/'
 locale = 'en-us'
 title = 'Shimmer の blog'
 #theme = "github.com/gohugo-ananke/ananke/v2"
