@@ -1,36 +1,57 @@
 baseURL = 'https://lkjing2021345.github.io/'
-locale = 'en-us'
+languageCode = 'zh-cn'
+hasCJKLanguage = true
 title = 'Shimmer の blog'
 canonifyURLs = false
 relativeURLs = false
-#theme = "github.com/gohugo-ananke/ananke/v2"
 theme = "stack"
+
 [params]
   [params.sidebar]
-    # 头像设置
-    avatar = "/img/avatar.jpg"  # 把头像图片放在 static/img/ 目录下
-    # 副标题
+    avatar = "/img/avatar.jpg"
     subtitle = "网络安全爱好者"
-    # --- 2. 社交链接配置 (Stack 主题专用) ---
-  [[params.sidebar.links]]
+
+  [params.colorScheme]
+    toggle = true
+    default = "auto"
+
+  [params.article]
+    toc = true
+    readingTime = true
+
+  [params.widgets]
+    homepage = []
+    page = []
+
+# --- 主导航菜单 ---
+[[menu.main]]
+    name = "首页"
+    url = "/"
+    weight = 1
+
+[[menu.main]]
+    name = "文章"
+    url = "/post/"
+    weight = 2
+
+[[menu.main]]
+    name = "关于"
+    url = "/about/"
+    weight = 3
+
+# --- 社交链接（显示在侧边栏） ---
+[[menu.social]]
+    identifier = "github"
     name = "GitHub"
     url = "https://github.com/lkjing2021345"
-    icon = "github"
+    [menu.social.params]
+        icon = "brand-github"
+        newTab = true
 
-  [[params.sidebar.links]]
+[[menu.social]]
+    identifier = "bilibili"
     name = "Bilibili"
     url = "https://space.bilibili.com/565536792"
-    icon = "bilibili"
-    # 菜单导航
-  [[menu.main]]
-      name = "首页"
-      url = "/"
-      weight = 1
-  [[menu.main]]
-      name = "文章"
-      url = "/post/"
-      weight = 2
-  [[menu.main]]
-      name = "关于"
-      url = "/about/"
-      weight = 3
+    [menu.social.params]
+        icon = "brand-bilibili"
+        newTab = true

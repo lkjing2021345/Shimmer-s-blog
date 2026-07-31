@@ -4,13 +4,15 @@ draft = false
 title = '关于我'
 +++
 
+## 关于我
 
-以下是我的社交账号，欢迎来找我玩：
+Hello，我是 Shimmer，一名网络安全爱好者。欢迎来到我的博客！
 
-- name: GitHub
-  icon: brand-github
-  url: https://github.com/lkjing2021345
+### 社交账号
 
-- name: Bilibili
-  icon: brand-bilibili
-  url: https://space.bilibili.com/565536792
+| 平台 | 链接 |
+|------|------|
+| 🐙 GitHub | [lkjing2021345](https://github.com/lkjing2021345) |
+| 📺 Bilibili | [我的B站空间](https://space.bilibili.com/565536792) |
+
+欢迎来找我玩！

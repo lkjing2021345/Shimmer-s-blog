@@ -1,18 +1,11 @@
-.article-content { // line 205
-    .highlight { // line 331
-        background-color: var(--pre-background-color);
-        padding: var(--card-padding);
-        position: relative;
-
-        pre { // line 345
-            margin: initial;
-            padding: 0;
-            margin: 0;
-            width: auto;
-            max-height: 20em;
-            scrollbar-width: none; /* Firefox */
+// 覆盖主题 article.scss — 代码块滚动条隐藏
+.article-content {
+    .highlight {
+        pre {
+            // 隐藏代码块滚动条（Firefox + Chrome/Safari）
+            scrollbar-width: none;
             &::-webkit-scrollbar {
-                display: none; /* Chrome Safari */
+                display: none;
             }
         }
     }
