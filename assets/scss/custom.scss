@@ -30,7 +30,7 @@
 }
 
 // =============================================
-// 3. 链接样式
+// 3. 链接 & 行内代码
 // =============================================
 a {
     text-decoration: none;
@@ -59,10 +59,34 @@ code {
 }
 
 // =============================================
-// 4. 文章内容区样式
+// 4. 引用块（blockquote）—— 修复背景和文字错位
 // =============================================
+.article-content {
+    blockquote {
+        // 颜色
+        border-left: 6px solid #358b9a !important;
+        background: #e8f5e9;
 
-// 文章图片圆角
+        // ★ 关键修复：覆盖主题的负 margin，让背景不超出正文区域
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        width: 100% !important;
+
+        // 调整 padding 匹配 6px 边框
+        padding: 12px 20px;
+
+        border-radius: 0 8px 8px 0;
+    }
+}
+
+[data-scheme="dark"] .article-content blockquote {
+    border-left-color: #4db6ac !important;
+    background: #2e3b2e;
+}
+
+// =============================================
+// 5. 文章图片圆角
+// =============================================
 .article-page .main-article .article-content {
     img {
         max-width: 96% !important;
@@ -71,16 +95,8 @@ code {
     }
 }
 
-// 引用块样式
-.article-content {
-    blockquote {
-        border-left: 6px solid #358b9a1f !important;
-        background: #3a97431f;
-    }
-}
-
 // =============================================
-// 5. 代码块样式
+// 6. 代码块样式
 // =============================================
 .highlight {
     max-width: 102% !important;
@@ -103,7 +119,6 @@ code {
     }
 
     pre {
-        margin: initial;
         padding: 0;
         margin: 0;
         width: auto;
@@ -120,18 +135,16 @@ code {
 }
 
 // macOS 风格代码块顶部装饰条
-.article-content {
-    .highlight:before {
-        content: '';
-        display: block;
-        background: url(/code-header.svg);
-        height: 32px;
-        width: 100%;
-        background-size: 57px;
-        background-repeat: no-repeat;
-        margin-bottom: 5px;
-        background-position: -1px 2px;
-    }
+.article-content .highlight:before {
+    content: '';
+    display: block;
+    background: url(/code-header.svg);
+    height: 32px;
+    width: 100%;
+    background-size: 57px;
+    background-repeat: no-repeat;
+    margin-bottom: 5px;
+    background-position: -1px 2px;
 }
 
 // 代码复制按钮
@@ -156,14 +169,14 @@ code {
     border-radius: 12px;
     opacity: 1;
     padding: 0 5px;
-    background: 0;
+    background: none;
     color: #ffffffad;
-    font-family: lato;
+    font-family: lato, sans-serif;
     font-size: 1.5rem;
 }
 
 // =============================================
-// 6. 文章封面高度
+// 7. 文章封面高度
 // =============================================
 .article-list article .article-image img {
     width: 100%;
@@ -188,7 +201,7 @@ code {
 }
 
 // =============================================
-// 7. 滚动条美化
+// 8. 滚动条美化
 // =============================================
 .menu::-webkit-scrollbar {
     display: none;
@@ -216,7 +229,7 @@ html {
 }
 
 // =============================================
-// 8. 归档页面双栏布局
+// 9. 归档页双栏布局
 // =============================================
 @media (min-width: 1024px) {
     .article-list--compact {
@@ -236,16 +249,18 @@ html {
     }
 }
 
-// 归档页面卡片缩放
+// 归档卡片 hover 缩放
 .article-list--tile article {
-    transition: .6s ease;
+    transition: 0.6s ease;
 }
 
 .article-list--tile article:hover {
     transform: scale(1.03, 1.03);
 }
 
-// 友情链接三栏
+// =============================================
+// 10. 友情链接三栏布局
+// =============================================
 @media (min-width: 1024px) {
     .article-list--compact.links {
         display: grid;
@@ -269,7 +284,7 @@ html {
 }
 
 // =============================================
-// 9. 右侧导航栏微交互
+// 11. 右侧导航栏 hover 微交互
 // =============================================
 .search-form.widget {
     transition: transform 0.6s ease;
@@ -280,7 +295,7 @@ html {
 }
 
 .widget.archives .widget-archive--list {
-    transition: transform .3s ease;
+    transition: transform 0.3s ease;
 }
 
 .widget.archives .widget-archive--list:hover {
@@ -290,7 +305,7 @@ html {
 .tagCloud .tagCloud-tags a {
     border-radius: 10px;
     font-size: 1.4rem;
-    transition: transform .3s ease;
+    transition: transform 0.3s ease;
 }
 
 .tagCloud .tagCloud-tags a:hover {
@@ -298,7 +313,7 @@ html {
 }
 
 // =============================================
-// 10. 相关内容溢出修复
+// 12. 相关内容溢出修复
 // =============================================
 .related-contents {
     overflow-x: visible;
