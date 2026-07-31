@@ -1,5 +1,5 @@
 baseURL = 'https://lkjing2021345.github.io/'
-languageCode = 'zh-cn'
+locale = 'zh-cn'
 hasCJKLanguage = true
 title = 'Shimmer の blog'
 canonifyURLs = false
@@ -20,8 +20,40 @@ theme = "stack"
     readingTime = true
 
   [params.widgets]
-    homepage = []
-    page = []
+    homepage = [
+      { type = "search" },
+      { type = "archives", params = { limit = 5 } },
+      { type = "categories", params = { limit = 10 } },
+      { type = "tag-cloud", params = { limit = 10 } },
+    ]
+    page = [{ type = "toc" }]
+
+  # --- Giscus 评论配置 ---
+  # 启用步骤：
+  # 1. 访问 https://giscus.app
+  # 2. 填入仓库名 lkjing2021345/lkjing2021345.github.io
+  # 3. 选择 Discussion 分类（需先在 GitHub 仓库 Settings 中启用 Discussions）
+  # 4. 安装 Giscus App: https://github.com/apps/giscus
+  # 5. 复制生成的 repoID / categoryID，填入下方
+  # 6. 把下面 enabled 改为 true
+  [params.comments]
+    enabled = false
+    provider = "giscus"
+
+    [params.comments.giscus]
+      repo             = "lkjing2021345/lkjing2021345.github.io"
+      repoID           = ""
+      category         = "Announcements"
+      categoryID       = ""
+      mapping          = "pathname"
+      lightTheme       = "light"
+      darkTheme        = "dark_dimmed"
+      reactionsEnabled = "1"
+      emitMetadata     = "0"
+      inputPosition    = "top"
+      lang             = "zh-CN"
+      strict           = "0"
+      loading          = "lazy"
 
 # --- 主导航菜单 ---
 [[menu.main]]
@@ -35,9 +67,14 @@ theme = "stack"
     weight = 2
 
 [[menu.main]]
+    name = "归档"
+    url = "/page/archives/"
+    weight = 3
+
+[[menu.main]]
     name = "关于"
     url = "/about/"
-    weight = 3
+    weight = 5
 
 # --- 社交链接（显示在侧边栏） ---
 [[menu.social]]

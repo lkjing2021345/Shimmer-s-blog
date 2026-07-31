@@ -319,3 +319,10 @@ html {
     overflow-x: visible;
     padding-bottom: 15px;
 }
+
+// =============================================
+// 13. 隐藏空的 disqus 评论容器
+// =============================================
+.disqus-container:empty {
+    display: none;
+}
