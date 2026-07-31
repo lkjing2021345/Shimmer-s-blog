@@ -28,23 +28,16 @@ theme = "stack"
     ]
     page = [{ type = "toc" }]
 
-  # --- Giscus 评论配置 ---
-  # 启用步骤：
-  # 1. 访问 https://giscus.app
-  # 2. 填入仓库名 lkjing2021345/lkjing2021345.github.io
-  # 3. 选择 Discussion 分类（需先在 GitHub 仓库 Settings 中启用 Discussions）
-  # 4. 安装 Giscus App: https://github.com/apps/giscus
-  # 5. 复制生成的 repoID / categoryID，填入下方
-  # 6. 把下面 enabled 改为 true
+  # --- Giscus 评论 ---
   [params.comments]
-    enabled = false
+    enabled = true
     provider = "giscus"
 
     [params.comments.giscus]
       repo             = "lkjing2021345/lkjing2021345.github.io"
-      repoID           = ""
+      repoID           = "R_kgDOTmocsQ"
       category         = "Announcements"
-      categoryID       = ""
+      categoryID       = "DIC_kwDOTmocsc4DCYb9"
       mapping          = "pathname"
       lightTheme       = "light"
       darkTheme        = "dark_dimmed"
